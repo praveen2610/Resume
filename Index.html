@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen Mohan - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .navbar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .navbar a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .section {
+            margin-bottom: 50px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-to-top:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Smooth scrolling
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if( target.length ) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+
+            // Back to top button
+            var backToTop = $('.back-to-top');
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                    backToTop.fadeIn();
+                } else {
+                    backToTop.fadeOut();
+                }
+            });
+            backToTop.click(function() {
+                $('html, body').animate({scrollTop: 0}, 1000);
+                return false;
+            });
+
+            // Section hover effect
+            $('.section').hover(
+                function() {
+                    $(this).css('transform', 'translateY(-5px)');
+                }, 
+                function() {
+                    $(this).css('transform', 'translateY(0)');
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Praveen Mohan</h1>
+            <div class="contact-info">
+                <p><a href="mailto:pro932@gmail.com">pro932@gmail.com</a></p>
+                <p>Phone: 0451 024 855</p>
+                <p>Technical Proficiency | Problem-Solving Skills | Proactive Approach</p>
+                <p>Wentworthville NSW 2145</p>
+                <p><a href="https://www.linkedin.com/in/praveenmohan1991/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+        </div>
+
+        <div class="navbar">
+            <a href="#summary">Summary</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#references">References</a>
+        </div>
+
+        <div id="summary" class="section">
+            <h2>Professional Summary</h2>
+            <p>Result-oriented professional with over 5+ years of experience providing Network Support for queries and issues concerning complex enterprise resource management applications. I am seeking a full-time opportunity to apply my skills and knowledge to provide L2 Network Support and resolve technical issues. My experience comprises strong experience in Network Engineering, ERP Systems Implementation, Support, managing various upgrades, patches, and configuration to maintain a stable IT infrastructure.</p>
+        </div>
+
+        <div id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Virtualization:</strong> VMware, VirtualBox</li>
+                <li><strong>Networking:</strong> Remote Desktop Support, Active Directory, BAT Scripts, SCCM, Network Administration, System Administrator, DNS, DHCP, OpenVPN, Group Policy Deployment, Network Monitoring, Print Management</li>
+                <li><strong>Support Tools:</strong> JIRA, N-central RMM, Teamviewer, ServiceNow, Flexera, MS Teams</li>
+                <li><strong>Operating Systems:</strong> Linux, Windows, MAC, Windows Server 2012, 2016, 2019, 2022</li>
+                <li><strong>Cloud Services:</strong> Dynamics 365, SharePoint, OneDrive</li>
+                <li><strong>Programming Languages:</strong> Powershell, C, C++, Java (MVC Framework), PyCharm, R</li>
+                <li><strong>Database:</strong> SQL, PL/SQL, MySQL</li>
+                <li><strong>Web Development:</strong> HTML5, CSS, WordPress, Salesforce.com</li>
+                <li><strong>CRM:</strong> Microsoft Dynamics 365</li>
+                <li><strong>Software:</strong> Microsoft Office (Word, PowerPoint, Excel)</li>
+                <li><strong>IDE:</strong> Android Studio, Eclipse, NetBeans</li>
+            </ul>
+        </div>
+
+        <div id="experience" class="section">
+            <h2>Relevant Experience</h2>
+            <ul>
+                <li><strong>Corum Group Limited, Sydney</strong><br>
+                    Senior Technical Consultant | Aug 2021 - Present<br>
+                    Technical Consultant | Feb 2019 – Jul 2021<br>
+                    <ul>
+                        <li>Handled issues related to Microsoft Windows, Pharmaceutical ERP platforms (Corum LOTS, Amfac pharmaceutical, RPM, LOTS robot, Corum Clear Dispense) as well as generalized hardware support (printers, network hardware, PCs, peripherals, handheld scanners, on-site cloud backup solutions) and database management, which reduced downtime and increased productivity by 10%.</li>
+                        <li>Implemented Robot integration and configuration on LOTS application and ensured seamless Robot communication in the infrastructure, improving SLA by 5%.</li>
+                        <li>Performed Testing, debugging, diagnosing, and troubleshooting in an applications programming language and documented details on Azure Portal for tracking and making improvements on the Corum software applications (LOTS, CCD, AWD, RPM (ERP)), VitaPOS (Azure Environment).</li>
+                        <li>Recommended Network Optimizations for pharmacies, increasing network performance by 5%.</li>
+                        <li>Installed and troubleshooted IoT devices such as Intermec.</li>
+                        <li>Configured internal server and troubleshooted for optimal network performance.</li>
+                        <li>Utilized JSON, BATCH, and Powershell scripts to meet requirements and technical specifications.</li>
+                        <li>Produced complex reports from SQL server depending on client requirements.</li>
+                        <li>Implemented Virtualization of server for failover services.</li>
+                    </ul>
+                </li>
+                <li><strong>Technical Consultant | D365 Group (Contract), Sydney</strong><br>
+                    Nov 2018 – Feb 2019<br>
+                    <ul>
+                        <li>Designed system, customized portals, and created dashboards to model the client’s organizational process.</li>
+                        <li>Implemented business rules, process flows, and workflows.</li>
+                        <li>Implemented and managed Dynamics 365 custom solutions, forms, views, fields.</li>
+                        <li>Interacted with clients to understand key CRM requirements across sales, services, marketing, and support.</li>
+                        <li>Provided pre-sales demonstration of CRM software.</li>
+                        <li>Coordinated and managed the project tasks.</li>
+                        <li>Conducted process modeling and documented business "As-Is" state and "To-Be" future state.</li>
+                        <li>Performed data migration and integration mappings.</li>
+                        <li>Facilitated the completion, user testing, and deployment of development projects.</li>
+                    </ul>
+                </li>
+                <li><strong>Desktop Support Engineer | Axiom Technologies, Sydney</strong><br>
+                    Apr 2018 – Oct 2018<br>
+                    [Contracted to NBNTM Australia]<br>
+                    <ul>
+                        <li>Performed Windows 10 migration ensuring seamless and secure data transfer and trained peers.</li>
+                        <li>Addressed user tickets regarding hardware, software, and networking and performed remote troubleshooting. Also prepared technical documentation for peers and users.</li>
+                        <li>Performed user onboarding and troubleshooted where necessary including Citrix.</li>
+                        <li>Recorded technical issues and solutions in logs and escalated/collaborated with Senior Engineers.</li>
+                        <li>Maintained asset information at Salesforce.com for 100 users.</li>
+                        <li>Achieved an average rating of 5 stars from users.</li>
+                    </ul>
+                </li>
+                <li><strong>L1 Desktop Support Engineer | Axiom Technologies, Sydney</strong><br>
+                    Jul 2017 – Apr 2018<br>
+                    <ul>
+                        <li>Troubleshooted and supported Windows (7-10).</li>
+                        <li>Set up and tested workstation comprising docking station, internet, and check connection.</li>
+                        <li>Rack & stack the network switch/router, patch the switch, and configure the devices.</li>
+                        <li>Performed post-implementation test and ensured all the systems are working post-migration.</li>
+                    </ul>
+                </li>
+                <li><strong>Software Development Engineer (Contract) | Bharat Matrimony, India</strong><br>
+                    Aug 2014 – Jan 2015<br>
+                    <ul>
+                        <li>Developed a chat application in Android using Firebase as the backend and created documentation.</li>
+                        <li>Performed UI/Unit testing of the Bharat Matrimony (BM) Application.</li>
+                        <li>Reverse engineered undocumented modules of the BM app.</li>
+                        <li>Collaborated with developers and updated code on the subversion.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div id="education" class="section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Master of Information Technology</strong> - Macquarie University, Sydney. 2015 - 2017</li>
+                <li><strong>B.E in Computer Science Engineering</strong> - Satyabhama University, India. 2010 - 2014</li>
+            </ul>
+        </div>
+
+        <div id="certifications" class="section">
+            <h2>Certifications / Recognition</h2>
+            <ul>
+                <li><strong><a href="https://learn.microsoft.com/en-us/users/praveenmohan-5991/credentials/2c03623716547401?ref=https%3A%2F%2Fwww.linkedin.com%2F" target="_blank">Microsoft Certified: Azure Fundamentals</a></strong> - June 2024<br>
+                    Gained a foundational understanding of cloud services and how Microsoft Azure supports business operations, including core Azure services, security, privacy, compliance, and pricing.</li>
+                <li><strong><a href="https://www.credly.com/badges/e10b0762-4188-4fa3-8d0f-a57d14ff1ec7/linked_in_profile" target="_blank">MCSA Certification</a></strong> - Nov 2018<br>
+                    Mastered Dynamics 365 customization and configuration and customer engagement online.</li>
+                <li><strong><a href="https://www.coursera.org/account/accomplishments/verify/PDWX842HGF8H" target="_blank">Python Fundamentals</a></strong> - Online<br>
+                    Gained proficiency in Python programming, covering basic syntax, data structures, and application development.</li>
+                <li>ToastMasters 2023 - Present<br>
+                    Vice President of Membership in Toastmasters Blacktown.</li>
+            </ul>
+        </div>
+
+        <div id="references" class="section">
+            <h2>References</h2>
+            <p>Referee names and contact details available upon request.</p>
+        </div>
+    </div>
+
+    <div class="back-to-top">Back to Top</div>
+
+</body>
+</html>
